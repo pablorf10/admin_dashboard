@@ -1,0 +1,107 @@
+/*
+Autor: Pablo Ríos Furniet
+Licencia: Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)
+Este archivo forma parte de un proyecto con licencia no comercial.
+Puedes ver, modificar y reutilizar este código con fines personales o educativos, siempre que menciones al autor.
+Queda prohibido el uso comercial sin autorización expresa.
+Más información: https://creativecommons.org/licenses/by-nc/4.0/
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body,
+html {
+    overflow: hidden;
+    height: 100%;
+    overflow: auto;
+}
+
+.container {
+    position: relative;
+    z-index: 1;
+    border-radius: 30px;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.3); /* Agrega sombra */
+}
+
+.background-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin-right: 0;
+    padding-right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -999;
+    background-color:#64a948;
+}
+
+form,
+table {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 30px;
+}
+
+.form-group input,
+.form-group select {
+    background-color: #fff;
+    border-radius: 50px;
+    border: 1px solid #000000;
+    outline: 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    background-color: #fff;
+    border: 1px solid #64a948;
+    outline: 0;
+    box-shadow: none;
+}
+
+#btn,
+#btnSubmit {
+    background-color: #64a948;
+    border-radius: 20px;
+    color: #fff;
+}
+
+#btn:hover,
+#btnSubmit:hover {
+    background-color: #206fa5;
+    color: #fff;
+}
+
+.enlace {
+    color: #000000;
+    text-decoration: none;
+}
+
+.enlace:hover, .enlace:focus {
+    color: #64a948;
+    text-decoration: none;
+}
+
+.password-container {
+    position: relative;
+}
+
+#eyeIcon, #userIcon,
+#eyeIconRepeat {
+    position: absolute;
+    right: 10px;
+    top: 50px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.bx {
+    font-size: 24px;
+}

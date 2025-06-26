@@ -1,0 +1,13 @@
+RewriteEngine On
+
+# Detectar si está en subcarpeta (local) o raíz (producción)
+# En local, usa /admin_dashboard/
+ RewriteBase /admin_dashboard/
+
+# En producción (cuando se suba), reemplaza la línea de arriba por:
+# RewriteBase /
+
+# Redirigir todas las URLs a index.php, excepto archivos o carpetas existentes
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php [QSA,L]
